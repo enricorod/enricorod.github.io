@@ -1,3 +1,5 @@
+webViewSettings.setMediaPlaybackRequiresUserGesture(false);
+
 setTimeout(
  function()
  {

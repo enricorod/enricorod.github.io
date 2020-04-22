@@ -1,4 +1,5 @@
-WebView myWebView = (WebView) findViewById(R.id.webview); WebSettings webSettings = myWebView.getSettings();
+WebView myWebView = (WebView) findViewById(R.id.webview); 
+WebSettings webSettings = myWebView.getSettings();
 
 webViewSettings.setMediaPlaybackRequiresUserGesture(false);
 

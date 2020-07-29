@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('RobotoMono-Bold.ttf');
+}
+
+@keyframes battito {
+  0% { transform: translate(-50%, -50%) rotate(0) scale(1);}
+  50% { transform: translate(-50%, -50%) rotate(-15deg) scale(0.5);}
+  100% { transform: translate(-50%, -50%) rotate(0) scale(1);}
+}
+
+#ball{
+  width: 90px;
+  height: 54px;
+  background-image: url("cursor.gif");
+  position: absolute;
+  mix-blend-mode: difference;
+  animation: battito 5s infinite;
+}
+
+#l0g0 {
+  position: absolute;
+    overflow:visible;
+padding: 0px;
+padding-left: 50px;
+ margin: 0px;
+  height: 100px;
+}
+
+html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+#contenitore{
+height: 70%;
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+#colonnatesto{
+font-family: 'RobotoMono';
+letter-spacing: 1px;
+font-size: 12pt;
+line-height: 1.2;
+}
+
+
+a {
+  display:inline;
+color: #68FFE6;
+text-decoration: none;
+letter-spacing: 0px;
+transition: all 0.3s;
+}
+
+a:hover {
+   color: #1367D4;
+   transform: translate();
+   letter-spacing: 10px;
+   transition: all 0.3s;
+}
+
+#videoBG {
+    position:fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }

@@ -89,7 +89,3 @@ a:hover {
         height: 100%;
     }
 }
-@media (max-width: 767px) {
-    #videoBG {
-        display: none;
-    }
